@@ -69,7 +69,7 @@ resource "aws_route_table_association" "fccRouteTableAssos" {
 
 resource "aws_security_group" "allowWebFromMyIP" {
   name        = "allow-web-from-my-ip"
-  description = "allow web traffic from my work laptop's ip (li ip)"
+  description = "allow web traffic from my work laptops ip"
   vpc_id      = aws_vpc.fccVPC.id
 
   ingress {
